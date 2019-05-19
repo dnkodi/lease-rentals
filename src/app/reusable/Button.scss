@@ -1,0 +1,30 @@
+/*
+ * Created by Duleep Kodithuwakku on 19-05-2019.
+ */
+ .default {
+  background-color: white;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 200;
+  line-height: 20px;
+  margin-bottom: 5px;
+  margin-left: 5px;
+  padding: 10px;
+  transition: box-shadow 150ms linear;
+
+  &:focus, &:hover {
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    outline: none;
+  }
+
+  &:disabled:hover {
+    box-shadow: none;
+  }
+
+}
+
+.danger {
+  @extend .default;
+  color: red;
+}

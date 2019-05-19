@@ -1,0 +1,55 @@
+/*
+ * Created by Duleep Kodithuwakku on 19-05-2019.
+ */
+
+// vars
+$font-normal: Montserrat, Arial, sans-serif;
+$font-size-normal: 16px;
+$font-size-large: 24px;
+
+p {
+    margin: 0;
+}
+
+.customIconChild {
+    padding-left: 5px;
+}
+
+.customIconAdult {
+    padding-left: 5px;
+    transform: scale(1.4);
+}
+
+.customIconPlus {
+    padding: 0 5px 0 15px;
+}
+
+.customIconbrand {
+    transform: scale(2);
+    color: white;
+    stroke: black;
+    stroke-width: 20;
+    padding: 0 25px 0 15px;
+}
+
+body {
+    font-family: Montserrat, Arial, sans-serif;
+}
+
+// Breakpoints
+$M:     768px;
+$L:     1170px;
+
+// Media Queries
+
+@mixin MQ($canvas) {
+  @if $canvas == S {
+    @media only screen and (max-width: $M) { @content; }
+  }
+  @else if $canvas == M {
+    @media only screen and (min-width: $M) { @content; }
+  }
+  @else if $canvas == L {
+    @media only screen and (min-width: $L) { @content; }
+  }
+}

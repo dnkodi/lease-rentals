@@ -1,0 +1,30 @@
+/*
+ * Created by Duleep Kodithuwakku on 19-05-2019.
+ */
+ .container {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  align-self: center;
+}
+
+.spinner {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  animation: spinnerA 1s linear infinite;
+  border: solid 7px transparent;
+  border-radius: 100%;
+  border-top: solid 7px rgba(0, 0, 0, 0.3);
+  height: 75px;
+  width: 75px;
+}
+
+@keyframes spinnerA {
+  0% {
+      transform: rotate(0deg);
+  }
+  100% {
+      transform: rotate(360deg);
+  }
+}

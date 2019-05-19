@@ -1,0 +1,63 @@
+/*
+ * Created by Duleep Kodithuwakku on 19-05-2019.
+ */
+ @import "../global.scss";
+
+ .table {
+   width: 100%;
+   border-collapse: collapse;
+   background-color: white;
+ 
+   @include MQ(S) {
+     width: 100%;
+   }
+ }
+ 
+ .tbody {
+  border: 1px solid #ddd;
+ }
+ 
+ .thead {
+   @include MQ(S) {
+     display: none;
+   }
+ }
+ 
+ .tr {
+   border: 1px solid #DDDDDD;
+   @include MQ(S) {
+     display: block;
+     margin-bottom: 10px;
+   }
+ }
+ 
+ .th {
+  text-align: left;
+  padding: 15px;
+  border-bottom: 1px solid #ddd;
+ }
+ 
+ .td {
+  text-align: left;
+  padding: 10px 15px;
+  border-bottom: 1px solid #ddd;
+ 
+   @include MQ(S) {
+     border-bottom: 1px solid #DDDDDD;
+     display: block;
+     font-size: 0.8rem;
+     min-height: 35px;
+     text-align: right;
+ 
+     &:last-child {
+       border: none;
+     }
+ 
+     &:before {
+       content: attr(data-label);
+       float: left;
+       font-weight: bold;
+       margin-bottom: 5px;
+     }
+   }
+ }

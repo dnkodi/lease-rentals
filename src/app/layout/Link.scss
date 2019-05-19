@@ -1,0 +1,27 @@
+/*
+ * Created by Duleep Kodithuwakku on 19-05-2019.
+ */
+@import "../global.scss";
+
+.link {
+    color: grey;
+    font-family: $font-normal;
+    font-size: $font-size-normal;
+    text-decoration: none;
+
+    &:visited {
+        color: grey;
+    }
+}
+
+.active {
+    font-weight: 500;
+}
+
+.underline {
+    text-decoration: underline;
+}
+
+.white {
+    color: white;
+}

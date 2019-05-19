@@ -1,0 +1,11 @@
+{
+  "presets": [
+    ["@babel/preset-env", {
+      "targets": {
+        "browsers": "> 0.1%"
+      }
+    }],
+    "@babel/preset-react"
+  ],
+  "plugins": ["transform-object-rest-spread", "transform-class-properties"]
+}
